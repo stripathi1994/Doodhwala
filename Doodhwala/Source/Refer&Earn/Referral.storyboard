@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibri.ttf">
+            <string>Calibri</string>
+        </array>
+        <array key="Calibri_Bold.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Referral View Controller-->
+        <scene sceneID="4v4-Q8-ocf">
+            <objects>
+                <viewController id="N7h-eP-SZL" customClass="ReferralViewController" customModule="Doodhvale" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HCD-jO-yoD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZE-fC-pxM">
+                                <rect key="frame" x="169.5" y="72" width="37.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="referal_banner" translatesAutoresizingMaskIntoConstraints="NO" id="CDI-Ze-XEz">
+                                <rect key="frame" x="36.5" y="109" width="301" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVi-rf-2VI">
+                                <rect key="frame" x="20" y="229" width="335" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnd-F5-knk">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.41960784309999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mKc-7H-1Vi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="20"/>
+                                <state key="normal" title="SHARE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonAction:" destination="N7h-eP-SZL" eventType="touchUpInside" id="YnT-cY-RoA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXD-Ti-aSs">
+                                <rect key="frame" x="91.5" y="258.5" width="192" height="32"/>
+                                <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                                <state key="normal" title="www.doodhvale.com/referral">
+                                    <color key="titleColor" red="0.87450980389999999" green="0.41960784309999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="urlButtonAction:" destination="N7h-eP-SZL" eventType="touchUpInside" id="HXf-rt-jDH"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kj2-40-yrI">
+                                <rect key="frame" x="91.5" y="281.5" width="192" height="1"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.41960784309999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="SEM-Sb-rxb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1z3-jy-jWW">
+                                <rect key="frame" x="0.0" y="306.5" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ARl-u7-kdC"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7YS-mF-dsF">
+                                <rect key="frame" x="20" y="323.5" width="294.5" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your total earned points till today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyK-qn-l67">
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="20"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHD-Il-6fL">
+                                        <rect key="frame" x="286" y="0.0" width="8.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cT6-UX-whr">
+                                <rect key="frame" x="20" y="359.5" width="294.5" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your total redeem points till today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tes-Vm-cf6">
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="20"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJh-ZO-gqD">
+                                        <rect key="frame" x="286" y="0.0" width="8.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Nzu-Xl-keD">
+                                <rect key="frame" x="20" y="395.5" width="294.5" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your balance earned points as of today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DH8-tT-AVA">
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="20"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-Qh-Oxf">
+                                        <rect key="frame" x="286" y="0.0" width="8.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cT6-UX-whr" firstAttribute="trailing" secondItem="7YS-mF-dsF" secondAttribute="trailing" id="02t-Tr-yLk"/>
+                            <constraint firstItem="Nzu-Xl-keD" firstAttribute="top" secondItem="cT6-UX-whr" secondAttribute="bottom" constant="16" id="0cg-Fj-tcC"/>
+                            <constraint firstItem="N3f-4C-7r7" firstAttribute="trailing" secondItem="1z3-jy-jWW" secondAttribute="trailing" id="4OK-EN-ELO"/>
+                            <constraint firstItem="7YS-mF-dsF" firstAttribute="top" secondItem="1z3-jy-jWW" secondAttribute="bottom" constant="16" id="5HL-Kj-Sm8"/>
+                            <constraint firstItem="1z3-jy-jWW" firstAttribute="top" secondItem="BXD-Ti-aSs" secondAttribute="bottom" constant="16" id="6RV-4V-HMh"/>
+                            <constraint firstItem="cT6-UX-whr" firstAttribute="top" secondItem="7YS-mF-dsF" secondAttribute="bottom" constant="16" id="9ha-a0-9ld"/>
+                            <constraint firstAttribute="trailing" secondItem="hnd-F5-knk" secondAttribute="trailing" id="9jq-60-I3R"/>
+                            <constraint firstItem="N3f-4C-7r7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7YS-mF-dsF" secondAttribute="trailing" constant="8" id="Cw8-X6-20E"/>
+                            <constraint firstItem="PZE-fC-pxM" firstAttribute="top" secondItem="N3f-4C-7r7" secondAttribute="top" constant="8" id="Ivm-YR-u9Z"/>
+                            <constraint firstItem="1z3-jy-jWW" firstAttribute="leading" secondItem="N3f-4C-7r7" secondAttribute="leading" id="Kyd-uv-kEG"/>
+                            <constraint firstItem="Nzu-Xl-keD" firstAttribute="leading" secondItem="cT6-UX-whr" secondAttribute="leading" id="PjL-D5-sSc"/>
+                            <constraint firstItem="kj2-40-yrI" firstAttribute="leading" secondItem="BXD-Ti-aSs" secondAttribute="leading" id="Qke-lp-RXU"/>
+                            <constraint firstItem="BXD-Ti-aSs" firstAttribute="centerX" secondItem="HCD-jO-yoD" secondAttribute="centerX" id="YNl-sG-7Ra"/>
+                            <constraint firstItem="CDI-Ze-XEz" firstAttribute="top" secondItem="PZE-fC-pxM" secondAttribute="bottom" constant="16" id="aN2-OD-Mbd"/>
+                            <constraint firstItem="7YS-mF-dsF" firstAttribute="leading" secondItem="SVi-rf-2VI" secondAttribute="leading" id="bPs-4Q-Hpc"/>
+                            <constraint firstItem="SVi-rf-2VI" firstAttribute="top" secondItem="CDI-Ze-XEz" secondAttribute="bottom" constant="20" id="cAN-jD-gf5"/>
+                            <constraint firstItem="kj2-40-yrI" firstAttribute="top" secondItem="BXD-Ti-aSs" secondAttribute="bottom" constant="-9" id="dOl-A7-8Xf"/>
+                            <constraint firstItem="BXD-Ti-aSs" firstAttribute="top" secondItem="SVi-rf-2VI" secondAttribute="bottom" constant="12" id="e0j-sf-Mu8"/>
+                            <constraint firstItem="kj2-40-yrI" firstAttribute="trailing" secondItem="BXD-Ti-aSs" secondAttribute="trailing" id="mnf-Y9-IZp"/>
+                            <constraint firstItem="N3f-4C-7r7" firstAttribute="trailing" secondItem="SVi-rf-2VI" secondAttribute="trailing" constant="20" id="nl8-ac-ZlJ"/>
+                            <constraint firstItem="PZE-fC-pxM" firstAttribute="centerX" secondItem="HCD-jO-yoD" secondAttribute="centerX" id="nuX-0I-FJM"/>
+                            <constraint firstItem="cT6-UX-whr" firstAttribute="leading" secondItem="7YS-mF-dsF" secondAttribute="leading" id="oZZ-jh-ZJI"/>
+                            <constraint firstItem="hnd-F5-knk" firstAttribute="leading" secondItem="N3f-4C-7r7" secondAttribute="leading" id="rtf-C2-Lq5"/>
+                            <constraint firstItem="CDI-Ze-XEz" firstAttribute="centerX" secondItem="HCD-jO-yoD" secondAttribute="centerX" id="tIZ-rl-x77"/>
+                            <constraint firstItem="SVi-rf-2VI" firstAttribute="leading" secondItem="N3f-4C-7r7" secondAttribute="leading" constant="20" id="wKD-aP-CRF"/>
+                            <constraint firstItem="Nzu-Xl-keD" firstAttribute="trailing" secondItem="cT6-UX-whr" secondAttribute="trailing" id="wrQ-Te-pzh"/>
+                            <constraint firstItem="N3f-4C-7r7" firstAttribute="bottom" secondItem="hnd-F5-knk" secondAttribute="bottom" id="xBp-uL-XhJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N3f-4C-7r7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="353-qN-SSb">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="wnh-8D-onE">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="balancePointsLabel" destination="ogf-Qh-Oxf" id="w3r-1T-1af"/>
+                        <outlet property="descriptionLabel" destination="SVi-rf-2VI" id="ZeL-Pf-1jL"/>
+                        <outlet property="headerLabel" destination="PZE-fC-pxM" id="dGQ-Ik-iW5"/>
+                        <outlet property="menuButton" destination="wnh-8D-onE" id="djG-1s-BbR"/>
+                        <outlet property="pointsLabel" destination="eHD-Il-6fL" id="wdC-Yf-BSs"/>
+                        <outlet property="redeemPointsLabel" destination="gJh-ZO-gqD" id="pD7-2G-cGL"/>
+                        <outlet property="urlButton" destination="BXD-Ti-aSs" id="3af-xE-dcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bi-50-oE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="106.59670164917542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lqH-lu-hv4">
+            <objects>
+                <navigationController storyboardIdentifier="ReferralNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="oba-6s-nQe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WDk-uo-Mf2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N7h-eP-SZL" kind="relationship" relationship="rootViewController" id="sok-ZS-scJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvL-NJ-oEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="24" height="24"/>
+        <image name="referal_banner" width="301" height="100"/>
+    </resources>
+</document>

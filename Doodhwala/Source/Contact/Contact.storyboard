@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibri.ttf">
+            <string>Calibri</string>
+        </array>
+        <array key="Calibri_Bold.ttf">
+            <string>Calibri-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="Fck-Uh-Ok3">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" id="ovq-7M-1Tf" customClass="ContactViewController" customModule="Doodhvale" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vAa-br-Qba">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0s9-JA-3cb">
+                                <rect key="frame" x="10" y="74" width="355" height="583"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Doodhvale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqC-Mo-Zpi">
+                                        <rect key="frame" x="121.5" y="204" width="112" height="31"/>
+                                        <fontDescription key="fontDescription" name="Calibri-Bold" family="Calibri" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashicon" translatesAutoresizingMaskIntoConstraints="NO" id="o98-cy-ZEr">
+                                        <rect key="frame" x="0.0" y="523" width="355" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="KBX-fj-2pS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Farm Address - VPO, Khewra, Jhundpur Road," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="2DG-Sx-7rL">
+                                        <rect key="frame" x="8" y="239" width="339" height="21"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Sonipat, Haryana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="hUc-hX-B9b">
+                                        <rect key="frame" x="8" y="260" width="339" height="21"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Phone - 8010342342" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-ec-Inr">
+                                        <rect key="frame" x="8" y="281" width="339" height="21"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Email Id - doodhvale@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="nWJ-hU-Ctc">
+                                        <rect key="frame" x="8" y="302" width="339" height="21"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Website - doodhvale.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="pRm-g0-ZGg">
+                                        <rect key="frame" x="8" y="323" width="339" height="21"/>
+                                        <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sQz-ec-Inr" secondAttribute="trailing" constant="8" id="77f-u0-bYC"/>
+                                    <constraint firstItem="sQz-ec-Inr" firstAttribute="centerY" secondItem="0s9-JA-3cb" secondAttribute="centerY" id="7JH-Ho-y8K"/>
+                                    <constraint firstItem="2DG-Sx-7rL" firstAttribute="leading" secondItem="0s9-JA-3cb" secondAttribute="leading" constant="8" id="8bq-fv-VPF"/>
+                                    <constraint firstItem="hUc-hX-B9b" firstAttribute="leading" secondItem="0s9-JA-3cb" secondAttribute="leading" constant="8" id="Biq-ou-kPg"/>
+                                    <constraint firstItem="oqC-Mo-Zpi" firstAttribute="centerX" secondItem="0s9-JA-3cb" secondAttribute="centerX" id="CD6-b2-w6n"/>
+                                    <constraint firstItem="sQz-ec-Inr" firstAttribute="top" secondItem="hUc-hX-B9b" secondAttribute="bottom" id="DzI-yp-G0q"/>
+                                    <constraint firstItem="nWJ-hU-Ctc" firstAttribute="leading" secondItem="0s9-JA-3cb" secondAttribute="leading" constant="8" id="MDI-w6-kLq"/>
+                                    <constraint firstAttribute="trailing" secondItem="pRm-g0-ZGg" secondAttribute="trailing" constant="8" id="Mry-W3-ysm"/>
+                                    <constraint firstAttribute="trailing" secondItem="2DG-Sx-7rL" secondAttribute="trailing" constant="8" id="PWW-PQ-Kfm"/>
+                                    <constraint firstItem="sQz-ec-Inr" firstAttribute="leading" secondItem="0s9-JA-3cb" secondAttribute="leading" constant="8" id="TVL-uD-otK"/>
+                                    <constraint firstAttribute="trailing" secondItem="o98-cy-ZEr" secondAttribute="trailing" id="URm-3n-nF9"/>
+                                    <constraint firstItem="hUc-hX-B9b" firstAttribute="top" secondItem="2DG-Sx-7rL" secondAttribute="bottom" id="Vqh-BP-vRG"/>
+                                    <constraint firstItem="pRm-g0-ZGg" firstAttribute="top" secondItem="nWJ-hU-Ctc" secondAttribute="bottom" id="ce0-ay-TYN"/>
+                                    <constraint firstItem="o98-cy-ZEr" firstAttribute="centerX" secondItem="0s9-JA-3cb" secondAttribute="centerX" id="fwR-38-wgA"/>
+                                    <constraint firstAttribute="bottom" secondItem="o98-cy-ZEr" secondAttribute="bottom" id="hKK-PJ-1O2"/>
+                                    <constraint firstItem="pRm-g0-ZGg" firstAttribute="leading" secondItem="0s9-JA-3cb" secondAttribute="leading" constant="8" id="jlY-B0-Ius"/>
+                                    <constraint firstAttribute="trailing" secondItem="nWJ-hU-Ctc" secondAttribute="trailing" constant="8" id="lvD-Gq-DZO"/>
+                                    <constraint firstAttribute="bottom" secondItem="o98-cy-ZEr" secondAttribute="bottom" id="mKz-O3-2y5"/>
+                                    <constraint firstAttribute="trailing" secondItem="hUc-hX-B9b" secondAttribute="trailing" constant="8" id="mMR-4B-WWA"/>
+                                    <constraint firstItem="nWJ-hU-Ctc" firstAttribute="top" secondItem="sQz-ec-Inr" secondAttribute="bottom" id="t0K-bb-Tpf"/>
+                                    <constraint firstItem="o98-cy-ZEr" firstAttribute="leading" secondItem="0s9-JA-3cb" secondAttribute="leading" id="tIz-Uw-hL4"/>
+                                    <constraint firstItem="2DG-Sx-7rL" firstAttribute="top" secondItem="oqC-Mo-Zpi" secondAttribute="bottom" constant="4" id="vSY-k6-KXa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zyk-r9-RkV" firstAttribute="trailing" secondItem="0s9-JA-3cb" secondAttribute="trailing" constant="10" id="gDv-6U-k9N"/>
+                            <constraint firstItem="0s9-JA-3cb" firstAttribute="top" secondItem="zyk-r9-RkV" secondAttribute="top" constant="10" id="kQH-lf-eoc"/>
+                            <constraint firstItem="zyk-r9-RkV" firstAttribute="bottom" secondItem="0s9-JA-3cb" secondAttribute="bottom" constant="10" id="m7E-hB-afR"/>
+                            <constraint firstItem="0s9-JA-3cb" firstAttribute="leading" secondItem="zyk-r9-RkV" secondAttribute="leading" constant="10" id="qKA-gx-TCc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zyk-r9-RkV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qJh-F0-yfU">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="oYp-BM-lYd">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainSubView" destination="0s9-JA-3cb" id="Dtl-s4-XuF"/>
+                        <outlet property="menuButton" destination="oYp-BM-lYd" id="cut-d9-rUG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kb2-HM-Onb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.20000000000005" y="77.811094452773617"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8FC-OX-TTd">
+            <objects>
+                <navigationController storyboardIdentifier="ContactNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="D1C-FW-kCa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ac5-oC-Dy2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ovq-7M-1Tf" kind="relationship" relationship="rootViewController" id="kau-Ok-Efn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75t-c6-ePc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="77.811094452773617"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="24" height="24"/>
+        <image name="splashicon" width="409" height="120"/>
+    </resources>
+</document>

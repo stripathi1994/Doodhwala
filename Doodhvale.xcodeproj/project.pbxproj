@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A74F8EDF270014D6229446 /* Pods_Doodhvale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0508285EE0AC32C48606FF /* Pods_Doodhvale.framework */; };
+		185272F820DB8927007D0ABB /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185272F720DB8927007D0ABB /* WeekDayView.swift */; };
+		186DB4132101AABF006AFE05 /* UnsubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DB4122101AABF006AFE05 /* UnsubscribeViewController.swift */; };
+		186DB4152101B3B6006AFE05 /* ReasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DB4142101B3B6006AFE05 /* ReasonTableViewCell.swift */; };
+		18816EEF20D8CF6600668616 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18816EEE20D8CF6600668616 /* SubscriptionViewController.swift */; };
+		18816EF120D8D41D00668616 /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18816EF020D8D41D00668616 /* Subscription.storyboard */; };
+		1897990120E2289B0035ED1F /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189798FF20E2289B0035ED1F /* PopOverViewController.swift */; };
+		1897990220E2289B0035ED1F /* PopOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1897990020E2289B0035ED1F /* PopOverViewController.xib */; };
+		1897990520E22AE10035ED1F /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897990320E22AE10035ED1F /* ListTableViewCell.swift */; };
+		1897990620E22AE10035ED1F /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1897990420E22AE10035ED1F /* ListTableViewCell.xib */; };
+		1899AA3720F5A0040010A15F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1899AA3620F5A0040010A15F /* UserManager.swift */; };
+		18BE1171218F2B8600EDFC1C /* BottleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE1170218F2B8600EDFC1C /* BottleDetailsViewController.swift */; };
+		18BE1173218F2E7300EDFC1C /* BottleDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE1172218F2E7300EDFC1C /* BottleDetailsTableViewCell.swift */; };
+		18BF7BCD20FB292A0065904A /* SubscriptionSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF7BCC20FB29290065904A /* SubscriptionSummaryViewController.swift */; };
+		18E3BF7620EF0519000C7F15 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3BF7520EF0519000C7F15 /* ProfileTableViewCell.swift */; };
+		18FD223720EDF1C9009793D3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD223620EDF1C9009793D3 /* SignUpViewController.swift */; };
+		6E0CC3742114275200B12BD0 /* EditSubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0CC3732114275200B12BD0 /* EditSubscribeViewController.swift */; };
+		6E22F42521414854001F07D3 /* InsufficientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E22F42421414854001F07D3 /* InsufficientViewController.swift */; };
+		6E26DC072115CB830046DFDE /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E26DC062115CB830046DFDE /* PaymentViewController.swift */; };
+		6E26DC092115CB950046DFDE /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E26DC082115CB950046DFDE /* Payment.storyboard */; };
+		6E34B5EB2138C9B5009E18A8 /* SubscriptionUnsettledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E34B5EA2138C9B5009E18A8 /* SubscriptionUnsettledViewController.swift */; };
+		6E3D9AF02116DD4D00D36D76 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3D9AEF2116DD4D00D36D76 /* SystemConfiguration.framework */; };
+		6E63809B21350B2100B0E1F0 /* AccountHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E63809A21350B2100B0E1F0 /* AccountHistoryViewController.swift */; };
+		6E63809D21350B5100B0E1F0 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E63809C21350B5100B0E1F0 /* HistoryTableViewCell.swift */; };
+		6E674AC0211BD874005D1816 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E674ABF211BD874005D1816 /* Profile.storyboard */; };
+		6E674AC2211BE030005D1816 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E674AC1211BE030005D1816 /* ProfileViewController.swift */; };
+		6E674AC4211C098B005D1816 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E674AC3211C098A005D1816 /* LocationViewController.swift */; };
+		6E674AC6211C0AB7005D1816 /* ProfileBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E674AC5211C0AB7005D1816 /* ProfileBaseViewController.swift */; };
+		6EBEBFF42143F89A000A8EF3 /* ReferralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBEBFF32143F89A000A8EF3 /* ReferralViewController.swift */; };
+		6EBEBFF62143F8A7000A8EF3 /* Referral.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBEBFF52143F8A7000A8EF3 /* Referral.storyboard */; };
+		6ECA2CA02136709100718837 /* BillingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA2C9F2136709100718837 /* BillingTableViewCell.swift */; };
+		6ECA2CA2213670F300718837 /* BillingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA2CA1213670F300718837 /* BillingViewController.swift */; };
+		6ECD0DEF2122687300483A98 /* AddressTableVewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD0DEE2122687300483A98 /* AddressTableVewCell.swift */; };
+		6ECD0DFD2123E97100483A98 /* PaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECD0DFC2123E97100483A98 /* PaymentSDK.framework */; };
+		6ECD0DFF2123EB3800483A98 /* PaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECD0DFC2123E97100483A98 /* PaymentSDK.framework */; };
+		6ECD0E002123EB3800483A98 /* PaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECD0DFC2123E97100483A98 /* PaymentSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6EDF4BB5213CD4E900D37CA1 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDF4BB4213CD4E900D37CA1 /* LogoutViewController.swift */; };
+		6EDF4BB8213CF29000D37CA1 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDF4BB7213CF29000D37CA1 /* ContactViewController.swift */; };
+		6EDF4BBA213CF2A100D37CA1 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDF4BB9213CF2A100D37CA1 /* Contact.storyboard */; };
+		6EDF4BBD213D078F00D37CA1 /* Faq.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDF4BBC213D078F00D37CA1 /* Faq.storyboard */; };
+		6EDF4BBF213D079D00D37CA1 /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDF4BBE213D079D00D37CA1 /* FaqViewController.swift */; };
+		6EDF4BC1213D100700D37CA1 /* FaqTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDF4BC0213D100700D37CA1 /* FaqTableViewCell.swift */; };
+		6EDF4BC4213D351400D37CA1 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDF4BC3213D351400D37CA1 /* FeedbackViewController.swift */; };
+		6EDF4BC6213D395A00D37CA1 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDF4BC5213D395A00D37CA1 /* Feedback.storyboard */; };
+		6EE5CF7C213BDCAA000077FC /* BillingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE5CF7B213BDCAA000077FC /* BillingDetailsViewController.swift */; };
+		6EE5CF7E213BF4E4000077FC /* BillingDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE5CF7D213BF4E4000077FC /* BillingDetailsTableViewCell.swift */; };
+		843C5F6220FCBE3500E529D1 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F3E20FCBE3500E529D1 /* FSCalendar+Deprecated.m */; };
+		843C5F6320FCBE3500E529D1 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F4020FCBE3500E529D1 /* FSCalendar.m */; };
+		843C5F6420FCBE3500E529D1 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F4220FCBE3500E529D1 /* FSCalendarAppearance.m */; };
+		843C5F6520FCBE3500E529D1 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F4420FCBE3500E529D1 /* FSCalendarCalculator.m */; };
+		843C5F6620FCBE3500E529D1 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F4620FCBE3500E529D1 /* FSCalendarCell.m */; };
+		843C5F6720FCBE3500E529D1 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F4820FCBE3500E529D1 /* FSCalendarCollectionView.m */; };
+		843C5F6820FCBE3500E529D1 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F4A20FCBE3500E529D1 /* FSCalendarCollectionViewLayout.m */; };
+		843C5F6920FCBE3500E529D1 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F4C20FCBE3500E529D1 /* FSCalendarConstants.m */; };
+		843C5F6A20FCBE3500E529D1 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F4E20FCBE3500E529D1 /* FSCalendarDelegationFactory.m */; };
+		843C5F6B20FCBE3500E529D1 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F5020FCBE3500E529D1 /* FSCalendarDelegationProxy.m */; };
+		843C5F6C20FCBE3500E529D1 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F5320FCBE3500E529D1 /* FSCalendarExtensions.m */; };
+		843C5F6D20FCBE3500E529D1 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F5520FCBE3500E529D1 /* FSCalendarHeaderView.m */; };
+		843C5F6E20FCBE3500E529D1 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F5720FCBE3500E529D1 /* FSCalendarScopeHandle.m */; };
+		843C5F6F20FCBE3500E529D1 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F5920FCBE3500E529D1 /* FSCalendarStickyHeader.m */; };
+		843C5F7020FCBE3500E529D1 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F5B20FCBE3500E529D1 /* FSCalendarTransitionCoordinator.m */; };
+		843C5F7120FCBE3500E529D1 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F5D20FCBE3500E529D1 /* FSCalendarWeekdayView.m */; };
+		843C5F7220FCBE3500E529D1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 843C5F5E20FCBE3500E529D1 /* Info.plist */; };
+		843C5F7320FCBE3500E529D1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F6120FCBE3500E529D1 /* SWRevealViewController.m */; };
+		843C5F7620FCD28B00E529D1 /* ManageMilkDeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C5F7520FCD28B00E529D1 /* ManageMilkDeliveryViewController.swift */; };
+		843C5F7820FCD3E300E529D1 /* ManageMilkDelivery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843C5F7720FCD3E300E529D1 /* ManageMilkDelivery.storyboard */; };
+		847A976C1F4712D1008FBF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A976B1F4712D1008FBF08 /* AppDelegate.swift */; };
+		847A97711F4712D1008FBF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847A976F1F4712D1008FBF08 /* Main.storyboard */; };
+		847A97731F4712D1008FBF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A97721F4712D1008FBF08 /* Assets.xcassets */; };
+		847A97761F4712D1008FBF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847A97741F4712D1008FBF08 /* LaunchScreen.storyboard */; };
+		8487E40B1F4D81CB002CA777 /* Calibri.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8487E4071F4D81CB002CA777 /* Calibri.ttf */; };
+		8487E40C1F4D81CB002CA777 /* Calibri_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8487E4081F4D81CB002CA777 /* Calibri_Bold.ttf */; };
+		8487E40D1F4D81CB002CA777 /* Calibri_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8487E4091F4D81CB002CA777 /* Calibri_Bold_Italic.ttf */; };
+		8487E40E1F4D81CB002CA777 /* Calibri_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8487E40A1F4D81CB002CA777 /* Calibri_Italic.ttf */; };
+		B42CE2F01F74EDC800F98A82 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42CE2EF1F74EDC800F98A82 /* MenuViewController.swift */; };
+		B48166731F7A49B6002D6B40 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48166721F7A49B6002D6B40 /* MenuTableViewCell.swift */; };
+		B4A97B882061158500A9E359 /* CustomSizePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A97B872061158500A9E359 /* CustomSizePresentationController.m */; };
+		B4AB545C1F6CBD2700113187 /* MilkDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB545B1F6CBD2700113187 /* MilkDashboardViewController.swift */; };
+		B4AB545E1F6CCFC800113187 /* MilkDashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AB545D1F6CCFC800113187 /* MilkDashboardCell.swift */; };
+		B4D55E761F6163DB00C4AE9C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D55E6E1F6163DB00C4AE9C /* APIManager.swift */; };
+		B4D55E771F6163DB00C4AE9C /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D55E6F1F6163DB00C4AE9C /* APIRouter.swift */; };
+		B4D55E781F6163DB00C4AE9C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D55E711F6163DB00C4AE9C /* Extensions.swift */; };
+		B4D55E791F6163DB00C4AE9C /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D55E731F6163DB00C4AE9C /* CategoryCollectionViewCell.swift */; };
+		B4D55E7A1F6163DB00C4AE9C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D55E741F6163DB00C4AE9C /* HomeViewController.swift */; };
+		B4D55E7E1F61640400C4AE9C /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D55E7D1F61640400C4AE9C /* ProductListViewController.swift */; };
+		B4D55E801F6165C900C4AE9C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D55E7F1F6165C900C4AE9C /* ProductTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E3D9AF52116DFD000D36D76 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6ECD0E002123EB3800483A98 /* PaymentSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17D0039F478664C3DD04AFF8 /* Pods_Doodhwala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doodhwala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		185272F720DB8927007D0ABB /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		186DB4122101AABF006AFE05 /* UnsubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsubscribeViewController.swift; sourceTree = "<group>"; };
+		186DB4142101B3B6006AFE05 /* ReasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonTableViewCell.swift; sourceTree = "<group>"; };
+		18816EEE20D8CF6600668616 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		18816EF020D8D41D00668616 /* Subscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscription.storyboard; sourceTree = "<group>"; };
+		189798FF20E2289B0035ED1F /* PopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		1897990020E2289B0035ED1F /* PopOverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopOverViewController.xib; sourceTree = "<group>"; };
+		1897990320E22AE10035ED1F /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		1897990420E22AE10035ED1F /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		1899AA3620F5A0040010A15F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		18BE1170218F2B8600EDFC1C /* BottleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleDetailsViewController.swift; sourceTree = "<group>"; };
+		18BE1172218F2E7300EDFC1C /* BottleDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottleDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		18BF7BCC20FB29290065904A /* SubscriptionSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSummaryViewController.swift; sourceTree = "<group>"; };
+		18E3BF7520EF0519000C7F15 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		18FD223620EDF1C9009793D3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6E0CC3732114275200B12BD0 /* EditSubscribeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSubscribeViewController.swift; sourceTree = "<group>"; };
+		6E22F42421414854001F07D3 /* InsufficientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsufficientViewController.swift; sourceTree = "<group>"; };
+		6E26DC062115CB830046DFDE /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		6E26DC082115CB950046DFDE /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		6E34B5EA2138C9B5009E18A8 /* SubscriptionUnsettledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionUnsettledViewController.swift; sourceTree = "<group>"; };
+		6E3D9AEF2116DD4D00D36D76 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6E63809A21350B2100B0E1F0 /* AccountHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHistoryViewController.swift; sourceTree = "<group>"; };
+		6E63809C21350B5100B0E1F0 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		6E674ABF211BD874005D1816 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		6E674AC1211BE030005D1816 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6E674AC3211C098A005D1816 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		6E674AC5211C0AB7005D1816 /* ProfileBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBaseViewController.swift; sourceTree = "<group>"; };
+		6EBEBFF32143F89A000A8EF3 /* ReferralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralViewController.swift; sourceTree = "<group>"; };
+		6EBEBFF52143F8A7000A8EF3 /* Referral.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Referral.storyboard; sourceTree = "<group>"; };
+		6ECA2C9F2136709100718837 /* BillingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingTableViewCell.swift; sourceTree = "<group>"; };
+		6ECA2CA1213670F300718837 /* BillingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingViewController.swift; sourceTree = "<group>"; };
+		6ECD0DEE2122687300483A98 /* AddressTableVewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableVewCell.swift; sourceTree = "<group>"; };
+		6ECD0DFC2123E97100483A98 /* PaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PaymentSDK.framework; sourceTree = "<group>"; };
+		6EDF4BB4213CD4E900D37CA1 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		6EDF4BB7213CF29000D37CA1 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		6EDF4BB9213CF2A100D37CA1 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		6EDF4BBC213D078F00D37CA1 /* Faq.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Faq.storyboard; sourceTree = "<group>"; };
+		6EDF4BBE213D079D00D37CA1 /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
+		6EDF4BC0213D100700D37CA1 /* FaqTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqTableViewCell.swift; sourceTree = "<group>"; };
+		6EDF4BC3213D351400D37CA1 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		6EDF4BC5213D395A00D37CA1 /* Feedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
+		6EE5CF7B213BDCAA000077FC /* BillingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingDetailsViewController.swift; sourceTree = "<group>"; };
+		6EE5CF7D213BF4E4000077FC /* BillingDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		843C5F3E20FCBE3500E529D1 /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		843C5F3F20FCBE3500E529D1 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		843C5F4020FCBE3500E529D1 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		843C5F4120FCBE3500E529D1 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		843C5F4220FCBE3500E529D1 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		843C5F4320FCBE3500E529D1 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		843C5F4420FCBE3500E529D1 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		843C5F4520FCBE3500E529D1 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		843C5F4620FCBE3500E529D1 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		843C5F4720FCBE3500E529D1 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		843C5F4820FCBE3500E529D1 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		843C5F4920FCBE3500E529D1 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		843C5F4A20FCBE3500E529D1 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		843C5F4B20FCBE3500E529D1 /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		843C5F4C20FCBE3500E529D1 /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		843C5F4D20FCBE3500E529D1 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		843C5F4E20FCBE3500E529D1 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		843C5F4F20FCBE3500E529D1 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		843C5F5020FCBE3500E529D1 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		843C5F5120FCBE3500E529D1 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		843C5F5220FCBE3500E529D1 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		843C5F5320FCBE3500E529D1 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		843C5F5420FCBE3500E529D1 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		843C5F5520FCBE3500E529D1 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		843C5F5620FCBE3500E529D1 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		843C5F5720FCBE3500E529D1 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		843C5F5820FCBE3500E529D1 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		843C5F5920FCBE3500E529D1 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		843C5F5A20FCBE3500E529D1 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		843C5F5B20FCBE3500E529D1 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		843C5F5C20FCBE3500E529D1 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		843C5F5D20FCBE3500E529D1 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		843C5F5E20FCBE3500E529D1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843C5F6020FCBE3500E529D1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		843C5F6120FCBE3500E529D1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		843C5F7520FCD28B00E529D1 /* ManageMilkDeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMilkDeliveryViewController.swift; sourceTree = "<group>"; };
+		843C5F7720FCD3E300E529D1 /* ManageMilkDelivery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageMilkDelivery.storyboard; sourceTree = "<group>"; };
+		847A97681F4712D1008FBF08 /* Doodhvale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doodhvale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847A976B1F4712D1008FBF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847A97701F4712D1008FBF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		847A97721F4712D1008FBF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847A97751F4712D1008FBF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847A97771F4712D1008FBF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8487E4071F4D81CB002CA777 /* Calibri.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calibri.ttf; sourceTree = "<group>"; };
+		8487E4081F4D81CB002CA777 /* Calibri_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calibri_Bold.ttf; sourceTree = "<group>"; };
+		8487E4091F4D81CB002CA777 /* Calibri_Bold_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calibri_Bold_Italic.ttf; sourceTree = "<group>"; };
+		8487E40A1F4D81CB002CA777 /* Calibri_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calibri_Italic.ttf; sourceTree = "<group>"; };
+		84F98CAF1F4D7B7600BE3955 /* Doodhwala-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Doodhwala-Bridging-Header.h"; sourceTree = "<group>"; };
+		90501FC89FD81B3E0B4A7C2A /* Pods-Doodhvale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doodhvale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doodhvale/Pods-Doodhvale.debug.xcconfig"; sourceTree = "<group>"; };
+		A4535FF4262D8815E822BF8A /* Pods-Doodhwala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doodhwala.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doodhwala/Pods-Doodhwala.release.xcconfig"; sourceTree = "<group>"; };
+		B42CE2EF1F74EDC800F98A82 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B48166721F7A49B6002D6B40 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		B4A97B862061158500A9E359 /* CustomSizePresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSizePresentationController.h; sourceTree = "<group>"; };
+		B4A97B872061158500A9E359 /* CustomSizePresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSizePresentationController.m; sourceTree = "<group>"; };
+		B4AB545B1F6CBD2700113187 /* MilkDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilkDashboardViewController.swift; sourceTree = "<group>"; };
+		B4AB545D1F6CCFC800113187 /* MilkDashboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilkDashboardCell.swift; sourceTree = "<group>"; };
+		B4D55E6E1F6163DB00C4AE9C /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B4D55E6F1F6163DB00C4AE9C /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		B4D55E711F6163DB00C4AE9C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B4D55E731F6163DB00C4AE9C /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4D55E741F6163DB00C4AE9C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B4D55E7D1F61640400C4AE9C /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		B4D55E7F1F6165C900C4AE9C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		BB62B7E7CD21A51A2D54E5EE /* Pods-Doodhwala.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doodhwala.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Doodhwala/Pods-Doodhwala.debug.xcconfig"; sourceTree = "<group>"; };
+		C74940A2AA7280EF5E7E3585 /* Pods-Doodhvale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doodhvale.release.xcconfig"; path = "Pods/Target Support Files/Pods-Doodhvale/Pods-Doodhvale.release.xcconfig"; sourceTree = "<group>"; };
+		DF0508285EE0AC32C48606FF /* Pods_Doodhvale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doodhvale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847A97651F4712D1008FBF08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ECD0DFF2123EB3800483A98 /* PaymentSDK.framework in Frameworks */,
+				6ECD0DFD2123E97100483A98 /* PaymentSDK.framework in Frameworks */,
+				6E3D9AF02116DD4D00D36D76 /* SystemConfiguration.framework in Frameworks */,
+				03A74F8EDF270014D6229446 /* Pods_Doodhvale.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18816EED20D8CF6600668616 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				18816EEE20D8CF6600668616 /* SubscriptionViewController.swift */,
+				18816EF020D8D41D00668616 /* Subscription.storyboard */,
+				6E0CC3732114275200B12BD0 /* EditSubscribeViewController.swift */,
+				185272F720DB8927007D0ABB /* WeekDayView.swift */,
+				18BF7BCC20FB29290065904A /* SubscriptionSummaryViewController.swift */,
+				186DB4122101AABF006AFE05 /* UnsubscribeViewController.swift */,
+				186DB4142101B3B6006AFE05 /* ReasonTableViewCell.swift */,
+				6E34B5EA2138C9B5009E18A8 /* SubscriptionUnsettledViewController.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		18E3BF6E20EF0062000C7F15 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				18E3BF7520EF0519000C7F15 /* ProfileTableViewCell.swift */,
+				6ECD0DEE2122687300483A98 /* AddressTableVewCell.swift */,
+				6E674AC5211C0AB7005D1816 /* ProfileBaseViewController.swift */,
+				6E674AC1211BE030005D1816 /* ProfileViewController.swift */,
+				6E674AC3211C098A005D1816 /* LocationViewController.swift */,
+				6E674ABF211BD874005D1816 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		18FD223520EDF127009793D3 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				6EDF4BB4213CD4E900D37CA1 /* LogoutViewController.swift */,
+				18FD223620EDF1C9009793D3 /* SignUpViewController.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		6E26DC052115CB1B0046DFDE /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				18BE1172218F2E7300EDFC1C /* BottleDetailsTableViewCell.swift */,
+				6E26DC062115CB830046DFDE /* PaymentViewController.swift */,
+				6E26DC082115CB950046DFDE /* Payment.storyboard */,
+				6E63809A21350B2100B0E1F0 /* AccountHistoryViewController.swift */,
+				6E63809C21350B5100B0E1F0 /* HistoryTableViewCell.swift */,
+				6ECA2CA1213670F300718837 /* BillingViewController.swift */,
+				6ECA2C9F2136709100718837 /* BillingTableViewCell.swift */,
+				6EE5CF7B213BDCAA000077FC /* BillingDetailsViewController.swift */,
+				6EE5CF7D213BF4E4000077FC /* BillingDetailsTableViewCell.swift */,
+				18BE1170218F2B8600EDFC1C /* BottleDetailsViewController.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		6EBEBFF22143F7D3000A8EF3 /* Refer&Earn */ = {
+			isa = PBXGroup;
+			children = (
+				6EBEBFF32143F89A000A8EF3 /* ReferralViewController.swift */,
+				6EBEBFF52143F8A7000A8EF3 /* Referral.storyboard */,
+			);
+			path = "Refer&Earn";
+			sourceTree = "<group>";
+		};
+		6EDF4BB6213CF27C00D37CA1 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				6EDF4BB7213CF29000D37CA1 /* ContactViewController.swift */,
+				6EDF4BB9213CF2A100D37CA1 /* Contact.storyboard */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		6EDF4BBB213D078200D37CA1 /* Faqs */ = {
+			isa = PBXGroup;
+			children = (
+				6EDF4BBC213D078F00D37CA1 /* Faq.storyboard */,
+				6EDF4BBE213D079D00D37CA1 /* FaqViewController.swift */,
+				6EDF4BC0213D100700D37CA1 /* FaqTableViewCell.swift */,
+			);
+			path = Faqs;
+			sourceTree = "<group>";
+		};
+		6EDF4BC2213D34F900D37CA1 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				6EDF4BC3213D351400D37CA1 /* FeedbackViewController.swift */,
+				6EDF4BC5213D395A00D37CA1 /* Feedback.storyboard */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		843C5F3C20FCBE3500E529D1 /* ThirdPartyCode */ = {
+			isa = PBXGroup;
+			children = (
+				6ECD0DFC2123E97100483A98 /* PaymentSDK.framework */,
+				843C5F3D20FCBE3500E529D1 /* FSCalendar */,
+				843C5F5F20FCBE3500E529D1 /* SWRevealViewController */,
+			);
+			path = ThirdPartyCode;
+			sourceTree = "<group>";
+		};
+		843C5F3D20FCBE3500E529D1 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				843C5F3E20FCBE3500E529D1 /* FSCalendar+Deprecated.m */,
+				843C5F3F20FCBE3500E529D1 /* FSCalendar.h */,
+				843C5F4020FCBE3500E529D1 /* FSCalendar.m */,
+				843C5F4120FCBE3500E529D1 /* FSCalendarAppearance.h */,
+				843C5F4220FCBE3500E529D1 /* FSCalendarAppearance.m */,
+				843C5F4320FCBE3500E529D1 /* FSCalendarCalculator.h */,
+				843C5F4420FCBE3500E529D1 /* FSCalendarCalculator.m */,
+				843C5F4520FCBE3500E529D1 /* FSCalendarCell.h */,
+				843C5F4620FCBE3500E529D1 /* FSCalendarCell.m */,
+				843C5F4720FCBE3500E529D1 /* FSCalendarCollectionView.h */,
+				843C5F4820FCBE3500E529D1 /* FSCalendarCollectionView.m */,
+				843C5F4920FCBE3500E529D1 /* FSCalendarCollectionViewLayout.h */,
+				843C5F4A20FCBE3500E529D1 /* FSCalendarCollectionViewLayout.m */,
+				843C5F4B20FCBE3500E529D1 /* FSCalendarConstants.h */,
+				843C5F4C20FCBE3500E529D1 /* FSCalendarConstants.m */,
+				843C5F4D20FCBE3500E529D1 /* FSCalendarDelegationFactory.h */,
+				843C5F4E20FCBE3500E529D1 /* FSCalendarDelegationFactory.m */,
+				843C5F4F20FCBE3500E529D1 /* FSCalendarDelegationProxy.h */,
+				843C5F5020FCBE3500E529D1 /* FSCalendarDelegationProxy.m */,
+				843C5F5120FCBE3500E529D1 /* FSCalendarDynamicHeader.h */,
+				843C5F5220FCBE3500E529D1 /* FSCalendarExtensions.h */,
+				843C5F5320FCBE3500E529D1 /* FSCalendarExtensions.m */,
+				843C5F5420FCBE3500E529D1 /* FSCalendarHeaderView.h */,
+				843C5F5520FCBE3500E529D1 /* FSCalendarHeaderView.m */,
+				843C5F5620FCBE3500E529D1 /* FSCalendarScopeHandle.h */,
+				843C5F5720FCBE3500E529D1 /* FSCalendarScopeHandle.m */,
+				843C5F5820FCBE3500E529D1 /* FSCalendarStickyHeader.h */,
+				843C5F5920FCBE3500E529D1 /* FSCalendarStickyHeader.m */,
+				843C5F5A20FCBE3500E529D1 /* FSCalendarTransitionCoordinator.h */,
+				843C5F5B20FCBE3500E529D1 /* FSCalendarTransitionCoordinator.m */,
+				843C5F5C20FCBE3500E529D1 /* FSCalendarWeekdayView.h */,
+				843C5F5D20FCBE3500E529D1 /* FSCalendarWeekdayView.m */,
+				843C5F5E20FCBE3500E529D1 /* Info.plist */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		843C5F5F20FCBE3500E529D1 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				843C5F6020FCBE3500E529D1 /* SWRevealViewController.h */,
+				843C5F6120FCBE3500E529D1 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		843C5F7420FCD26000E529D1 /* ManageMilkDelivery */ = {
+			isa = PBXGroup;
+			children = (
+				843C5F7520FCD28B00E529D1 /* ManageMilkDeliveryViewController.swift */,
+				843C5F7720FCD3E300E529D1 /* ManageMilkDelivery.storyboard */,
+			);
+			path = ManageMilkDelivery;
+			sourceTree = "<group>";
+		};
+		847A975F1F4712D1008FBF08 = {
+			isa = PBXGroup;
+			children = (
+				84F98CAF1F4D7B7600BE3955 /* Doodhwala-Bridging-Header.h */,
+				847A976A1F4712D1008FBF08 /* Doodhwala */,
+				847A97691F4712D1008FBF08 /* Products */,
+				AFFB2E05304F2FF7EE894A0C /* Pods */,
+				AD0FE0C75146AD8082F45069 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		847A97691F4712D1008FBF08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847A97681F4712D1008FBF08 /* Doodhvale.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847A976A1F4712D1008FBF08 /* Doodhwala */ = {
+			isa = PBXGroup;
+			children = (
+				B4D55E6C1F6163DB00C4AE9C /* Source */,
+				8487E4051F4D81CB002CA777 /* Resources */,
+				847A976B1F4712D1008FBF08 /* AppDelegate.swift */,
+				847A976F1F4712D1008FBF08 /* Main.storyboard */,
+				847A97721F4712D1008FBF08 /* Assets.xcassets */,
+				847A97741F4712D1008FBF08 /* LaunchScreen.storyboard */,
+				847A97771F4712D1008FBF08 /* Info.plist */,
+			);
+			path = Doodhwala;
+			sourceTree = "<group>";
+		};
+		8487E4051F4D81CB002CA777 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8487E4061F4D81CB002CA777 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8487E4061F4D81CB002CA777 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8487E4071F4D81CB002CA777 /* Calibri.ttf */,
+				8487E4081F4D81CB002CA777 /* Calibri_Bold.ttf */,
+				8487E4091F4D81CB002CA777 /* Calibri_Bold_Italic.ttf */,
+				8487E40A1F4D81CB002CA777 /* Calibri_Italic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AD0FE0C75146AD8082F45069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E3D9AEF2116DD4D00D36D76 /* SystemConfiguration.framework */,
+				17D0039F478664C3DD04AFF8 /* Pods_Doodhwala.framework */,
+				DF0508285EE0AC32C48606FF /* Pods_Doodhvale.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFFB2E05304F2FF7EE894A0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB62B7E7CD21A51A2D54E5EE /* Pods-Doodhwala.debug.xcconfig */,
+				A4535FF4262D8815E822BF8A /* Pods-Doodhwala.release.xcconfig */,
+				90501FC89FD81B3E0B4A7C2A /* Pods-Doodhvale.debug.xcconfig */,
+				C74940A2AA7280EF5E7E3585 /* Pods-Doodhvale.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B42CE2EE1F74EDB300F98A82 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B42CE2EF1F74EDC800F98A82 /* MenuViewController.swift */,
+				B48166721F7A49B6002D6B40 /* MenuTableViewCell.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B4AB545A1F6CBD0D00113187 /* MilkDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B4AB545D1F6CCFC800113187 /* MilkDashboardCell.swift */,
+				B4AB545B1F6CBD2700113187 /* MilkDashboardViewController.swift */,
+			);
+			path = MilkDashboard;
+			sourceTree = "<group>";
+		};
+		B4D55E6C1F6163DB00C4AE9C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6EBEBFF22143F7D3000A8EF3 /* Refer&Earn */,
+				6EDF4BC2213D34F900D37CA1 /* Feedback */,
+				6EDF4BBB213D078200D37CA1 /* Faqs */,
+				6EDF4BB6213CF27C00D37CA1 /* Contact */,
+				B42CE2EE1F74EDB300F98A82 /* Menu */,
+				18FD223520EDF127009793D3 /* Signup */,
+				18E3BF6E20EF0062000C7F15 /* Profile */,
+				B4AB545A1F6CBD0D00113187 /* MilkDashboard */,
+				18816EED20D8CF6600668616 /* Subscription */,
+				B4D55E7C1F61640400C4AE9C /* Product */,
+				843C5F7420FCD26000E529D1 /* ManageMilkDelivery */,
+				6E26DC052115CB1B0046DFDE /* Payment */,
+				B4D55E721F6163DB00C4AE9C /* Home */,
+				B4D55E701F6163DB00C4AE9C /* Common */,
+				B4D55E6D1F6163DB00C4AE9C /* API */,
+				843C5F3C20FCBE3500E529D1 /* ThirdPartyCode */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B4D55E6D1F6163DB00C4AE9C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B4D55E6E1F6163DB00C4AE9C /* APIManager.swift */,
+				B4D55E6F1F6163DB00C4AE9C /* APIRouter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B4D55E701F6163DB00C4AE9C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B4A97B862061158500A9E359 /* CustomSizePresentationController.h */,
+				B4A97B872061158500A9E359 /* CustomSizePresentationController.m */,
+				B4D55E711F6163DB00C4AE9C /* Extensions.swift */,
+				189798FF20E2289B0035ED1F /* PopOverViewController.swift */,
+				1897990020E2289B0035ED1F /* PopOverViewController.xib */,
+				1897990320E22AE10035ED1F /* ListTableViewCell.swift */,
+				1897990420E22AE10035ED1F /* ListTableViewCell.xib */,
+				1899AA3620F5A0040010A15F /* UserManager.swift */,
+				6E22F42421414854001F07D3 /* InsufficientViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B4D55E721F6163DB00C4AE9C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B4D55E731F6163DB00C4AE9C /* CategoryCollectionViewCell.swift */,
+				B4D55E741F6163DB00C4AE9C /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B4D55E7C1F61640400C4AE9C /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				B4D55E7D1F61640400C4AE9C /* ProductListViewController.swift */,
+				B4D55E7F1F6165C900C4AE9C /* ProductTableViewCell.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847A97671F4712D1008FBF08 /* Doodhvale */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847A977A1F4712D1008FBF08 /* Build configuration list for PBXNativeTarget "Doodhvale" */;
+			buildPhases = (
+				C7FB933DC8AB31BAEBEDB6E9 /* [CP] Check Pods Manifest.lock */,
+				847A97641F4712D1008FBF08 /* Sources */,
+				847A97651F4712D1008FBF08 /* Frameworks */,
+				847A97661F4712D1008FBF08 /* Resources */,
+				84EA20825BF6AE9FED04CE20 /* [CP] Embed Pods Frameworks */,
+				6E3D9AF52116DFD000D36D76 /* Embed Frameworks */,
+				6ECD0DFE2123E99100483A98 /* ShellScript */,
+				232B5C713A22A5D794E8114B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Doodhvale;
+			productName = Doodhwala;
+			productReference = 847A97681F4712D1008FBF08 /* Doodhvale.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847A97601F4712D1008FBF08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = appzpixel;
+				TargetAttributes = {
+					847A97671F4712D1008FBF08 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7899L3P364;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 847A97631F4712D1008FBF08 /* Build configuration list for PBXProject "Doodhvale" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847A975F1F4712D1008FBF08;
+			productRefGroup = 847A97691F4712D1008FBF08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847A97671F4712D1008FBF08 /* Doodhvale */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847A97661F4712D1008FBF08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847A97761F4712D1008FBF08 /* LaunchScreen.storyboard in Resources */,
+				8487E40B1F4D81CB002CA777 /* Calibri.ttf in Resources */,
+				843C5F7820FCD3E300E529D1 /* ManageMilkDelivery.storyboard in Resources */,
+				847A97731F4712D1008FBF08 /* Assets.xcassets in Resources */,
+				6EDF4BBA213CF2A100D37CA1 /* Contact.storyboard in Resources */,
+				18816EF120D8D41D00668616 /* Subscription.storyboard in Resources */,
+				847A97711F4712D1008FBF08 /* Main.storyboard in Resources */,
+				6EBEBFF62143F8A7000A8EF3 /* Referral.storyboard in Resources */,
+				8487E40D1F4D81CB002CA777 /* Calibri_Bold_Italic.ttf in Resources */,
+				6E26DC092115CB950046DFDE /* Payment.storyboard in Resources */,
+				1897990220E2289B0035ED1F /* PopOverViewController.xib in Resources */,
+				6EDF4BC6213D395A00D37CA1 /* Feedback.storyboard in Resources */,
+				8487E40C1F4D81CB002CA777 /* Calibri_Bold.ttf in Resources */,
+				843C5F7220FCBE3500E529D1 /* Info.plist in Resources */,
+				8487E40E1F4D81CB002CA777 /* Calibri_Italic.ttf in Resources */,
+				6EDF4BBD213D078F00D37CA1 /* Faq.storyboard in Resources */,
+				6E674AC0211BD874005D1816 /* Profile.storyboard in Resources */,
+				1897990620E22AE10035ED1F /* ListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		232B5C713A22A5D794E8114B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Doodhvale/Pods-Doodhvale-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Doodhvale/Pods-Doodhvale-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ECD0DFE2123E99100483A98 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name 'PaymentSDK.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+		};
+		84EA20825BF6AE9FED04CE20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Doodhvale/Pods-Doodhvale-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Doodhvale/Pods-Doodhvale-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7FB933DC8AB31BAEBEDB6E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Doodhvale-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847A97641F4712D1008FBF08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18816EEF20D8CF6600668616 /* SubscriptionViewController.swift in Sources */,
+				6EDF4BB8213CF29000D37CA1 /* ContactViewController.swift in Sources */,
+				843C5F6220FCBE3500E529D1 /* FSCalendar+Deprecated.m in Sources */,
+				18BE1171218F2B8600EDFC1C /* BottleDetailsViewController.swift in Sources */,
+				843C5F6520FCBE3500E529D1 /* FSCalendarCalculator.m in Sources */,
+				18E3BF7620EF0519000C7F15 /* ProfileTableViewCell.swift in Sources */,
+				1897990120E2289B0035ED1F /* PopOverViewController.swift in Sources */,
+				B4AB545C1F6CBD2700113187 /* MilkDashboardViewController.swift in Sources */,
+				18BF7BCD20FB292A0065904A /* SubscriptionSummaryViewController.swift in Sources */,
+				6E63809B21350B2100B0E1F0 /* AccountHistoryViewController.swift in Sources */,
+				6EE5CF7E213BF4E4000077FC /* BillingDetailsTableViewCell.swift in Sources */,
+				6E34B5EB2138C9B5009E18A8 /* SubscriptionUnsettledViewController.swift in Sources */,
+				B4A97B882061158500A9E359 /* CustomSizePresentationController.m in Sources */,
+				1899AA3720F5A0040010A15F /* UserManager.swift in Sources */,
+				6EDF4BC4213D351400D37CA1 /* FeedbackViewController.swift in Sources */,
+				B48166731F7A49B6002D6B40 /* MenuTableViewCell.swift in Sources */,
+				B4D55E761F6163DB00C4AE9C /* APIManager.swift in Sources */,
+				6EBEBFF42143F89A000A8EF3 /* ReferralViewController.swift in Sources */,
+				6EE5CF7C213BDCAA000077FC /* BillingDetailsViewController.swift in Sources */,
+				843C5F6B20FCBE3500E529D1 /* FSCalendarDelegationProxy.m in Sources */,
+				B4D55E801F6165C900C4AE9C /* ProductTableViewCell.swift in Sources */,
+				B4D55E791F6163DB00C4AE9C /* CategoryCollectionViewCell.swift in Sources */,
+				B4AB545E1F6CCFC800113187 /* MilkDashboardCell.swift in Sources */,
+				843C5F6320FCBE3500E529D1 /* FSCalendar.m in Sources */,
+				186DB4152101B3B6006AFE05 /* ReasonTableViewCell.swift in Sources */,
+				B4D55E7E1F61640400C4AE9C /* ProductListViewController.swift in Sources */,
+				843C5F7120FCBE3500E529D1 /* FSCalendarWeekdayView.m in Sources */,
+				843C5F6820FCBE3500E529D1 /* FSCalendarCollectionViewLayout.m in Sources */,
+				6ECD0DEF2122687300483A98 /* AddressTableVewCell.swift in Sources */,
+				1897990520E22AE10035ED1F /* ListTableViewCell.swift in Sources */,
+				843C5F6D20FCBE3500E529D1 /* FSCalendarHeaderView.m in Sources */,
+				843C5F6420FCBE3500E529D1 /* FSCalendarAppearance.m in Sources */,
+				B42CE2F01F74EDC800F98A82 /* MenuViewController.swift in Sources */,
+				185272F820DB8927007D0ABB /* WeekDayView.swift in Sources */,
+				843C5F6720FCBE3500E529D1 /* FSCalendarCollectionView.m in Sources */,
+				843C5F7320FCBE3500E529D1 /* SWRevealViewController.m in Sources */,
+				843C5F6920FCBE3500E529D1 /* FSCalendarConstants.m in Sources */,
+				843C5F6F20FCBE3500E529D1 /* FSCalendarStickyHeader.m in Sources */,
+				186DB4132101AABF006AFE05 /* UnsubscribeViewController.swift in Sources */,
+				843C5F6620FCBE3500E529D1 /* FSCalendarCell.m in Sources */,
+				6ECA2CA2213670F300718837 /* BillingViewController.swift in Sources */,
+				B4D55E771F6163DB00C4AE9C /* APIRouter.swift in Sources */,
+				843C5F6C20FCBE3500E529D1 /* FSCalendarExtensions.m in Sources */,
+				18FD223720EDF1C9009793D3 /* SignUpViewController.swift in Sources */,
+				6E674AC4211C098B005D1816 /* LocationViewController.swift in Sources */,
+				6E63809D21350B5100B0E1F0 /* HistoryTableViewCell.swift in Sources */,
+				847A976C1F4712D1008FBF08 /* AppDelegate.swift in Sources */,
+				B4D55E781F6163DB00C4AE9C /* Extensions.swift in Sources */,
+				6E0CC3742114275200B12BD0 /* EditSubscribeViewController.swift in Sources */,
+				6E674AC6211C0AB7005D1816 /* ProfileBaseViewController.swift in Sources */,
+				6EDF4BBF213D079D00D37CA1 /* FaqViewController.swift in Sources */,
+				843C5F7020FCBE3500E529D1 /* FSCalendarTransitionCoordinator.m in Sources */,
+				6E26DC072115CB830046DFDE /* PaymentViewController.swift in Sources */,
+				6EDF4BB5213CD4E900D37CA1 /* LogoutViewController.swift in Sources */,
+				B4D55E7A1F6163DB00C4AE9C /* HomeViewController.swift in Sources */,
+				6ECA2CA02136709100718837 /* BillingTableViewCell.swift in Sources */,
+				6E22F42521414854001F07D3 /* InsufficientViewController.swift in Sources */,
+				843C5F7620FCD28B00E529D1 /* ManageMilkDeliveryViewController.swift in Sources */,
+				6E674AC2211BE030005D1816 /* ProfileViewController.swift in Sources */,
+				18BE1173218F2E7300EDFC1C /* BottleDetailsTableViewCell.swift in Sources */,
+				843C5F6A20FCBE3500E529D1 /* FSCalendarDelegationFactory.m in Sources */,
+				6EDF4BC1213D100700D37CA1 /* FaqTableViewCell.swift in Sources */,
+				843C5F6E20FCBE3500E529D1 /* FSCalendarScopeHandle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		847A976F1F4712D1008FBF08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847A97701F4712D1008FBF08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		847A97741F4712D1008FBF08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847A97751F4712D1008FBF08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847A97781F4712D1008FBF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		847A97791F4712D1008FBF08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847A977B1F4712D1008FBF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90501FC89FD81B3E0B4A7C2A /* Pods-Doodhvale.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7899L3P364;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Doodhwala/Source/ThirdPartyCode",
+				);
+				INFOPLIST_FILE = Doodhwala/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanjeevani.doodhvale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Doodhwala-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		847A977C1F4712D1008FBF08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74940A2AA7280EF5E7E3585 /* Pods-Doodhvale.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7899L3P364;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Doodhwala/Source/ThirdPartyCode",
+				);
+				INFOPLIST_FILE = Doodhwala/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanjeevani.doodhvale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Doodhwala-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847A97631F4712D1008FBF08 /* Build configuration list for PBXProject "Doodhvale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847A97781F4712D1008FBF08 /* Debug */,
+				847A97791F4712D1008FBF08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847A977A1F4712D1008FBF08 /* Build configuration list for PBXNativeTarget "Doodhvale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847A977B1F4712D1008FBF08 /* Debug */,
+				847A977C1F4712D1008FBF08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 847A97601F4712D1008FBF08 /* Project object */;
+}
